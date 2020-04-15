@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+    --primary-color: rgba(13, 110, 139, 0.5);
+    --secondary-color: rgba(229, 148, 0, 0.9);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 3rem;
+    overflow: hidden;
+}
+
+#showcase,
+#about,
+#services,
+#contact {
+    background: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+#showcase:before,
+#about:before,
+#services:before,
+#contact:before {
+    content: '';
+    background: url(../img/showcase.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#about:before {
+    background: url(../img/underwater-2170473.jpg) no-repeat center center/cover;
+}
+
+#services:before {
+    background: url(../img/blue-blur-color-dark-932638.jpg) no-repeat center center/cover;
+}
+
+
+#contact:before {
+    background: url(../img/beach-dawn-dusk-ocean-189349.jpg) no-repeat center center/cover;
+}
+
+.showcase_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.showcase_container h1 {
+    font-size: 3rem;
+}
+
+.showcase_container p {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+
+/* Button styling for future use */
+
+/* .btn {
+    color: #333333;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    transition: opacity 2s ease-in-out;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #333333;
+    opacity: 0.85;
+} */
